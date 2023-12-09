@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confession or Game?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    function askConfessionOrGame() {
+      var response = confirm("Hey Feryl, I have something to ask you. Do you want to play sum game?");
+      if (response == true) {
+        playGame();
+      } else {
+        alert("Later nalang");
+      }
+    }
+
+    function playGame() {
+      alert("Let's go! Prepare for an exciting adventure.");
+      // https://holablezzz.github.io/i-open-plesss/
+    }
+  </script>
+
+  <button onclick="askConfessionOrGame()">Confess or Game?</button>
+
+</body>
+</html>
